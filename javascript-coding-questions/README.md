@@ -2,7 +2,7 @@
 
 ## 🟢 Easy
 
-### [JSCQ-13](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-13)
+### [JSCQ-E01](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E01)
 **Calculate the total sum of elements from the provided array.**
 
 ```javascript
@@ -11,7 +11,7 @@ console.log(findSumOfNumbers(numbers));
 ```
 Expected output: ***40***
 
-### [JSCQ-22](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-22)
+### [JSCQ-E02](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E02)
 **Implement a javascript function that takes an array of numbers and returns a new array with only the even numbers.**
 
 ```javascript
@@ -20,7 +20,7 @@ console.log(findEvenNumbers(numbers));
 ```
 Expected output: ***[2, 4, 6, 8, 10]***
 
-### [JSCQ-05](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-05)
+### [JSCQ-E03](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E03)
 **Find out whether the provided word is having only unique characters.**
 
 ```javascript
@@ -28,7 +28,7 @@ console.log(hasUniqueCharacters('Unique'));;
 ```
 Expected output: ***true***
 
-### [JSCQ-06](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-06)
+### [JSCQ-E04](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E04)
 **Find out the count of each characters from the provided word.**
 
 ```javascript
@@ -36,7 +36,7 @@ console.log(countCharacters('abbcccdddd'));
 ```
 Expected output: ***{ a: 1, b: 2, c: 3, d: 4 }***
 
-### [JSCQ-10](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-10)
+### [JSCQ-E05](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E05)
 **Find and return the unique numbers from a given array.**
 
 ```javascript
@@ -45,7 +45,7 @@ console.log(removeDupicates(numbers));
 ```
 Expected output: ***[1, 2, 3, 4, 5, 6, 8]***
 
-### [JSCQ-01](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-01)
+### [JSCQ-E06](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E06)
 **Find the first non repeating character from the provided word.**
 
 ```javascript
@@ -58,7 +58,7 @@ findFirstNonRepeatingChar('Swiss');
 ```
 Expected output: ***w***
 
-### [JSCQ-11](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-11)
+### [JSCQ-E07](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E07)
 **Verify whether the provided string is a palindrome or not.**
 
 ```javascript
@@ -66,7 +66,7 @@ console.log(console.log(isPalindrome("A man, a plan, a canal, Panama")););
 ```
 Expected output: ***true***
 
-### [JSCQ-12](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-12)
+### [JSCQ-E08](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E08)
 **Given a word and two indexes of that word, swap the characters at those indexes and return the result.**
 
 ```javascript
@@ -75,7 +75,7 @@ console.log(swapLetters(input, 0, 3));
 ```
 Expected output: ***dbca***
 
-### [JSCQ-18](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-18)
+### [JSCQ-E09](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E09)
 **Find out whether the number is a prime number or not.**
 
 ```javascript
@@ -83,7 +83,7 @@ console.log(isPrime(5));
 ```
 Expected output: ***Number 5 is prime.***
 
-### [JSCQ-19](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-19)
+### [JSCQ-E10](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E10)
 **Find the factorial of the given number.**
 
 ```javascript
@@ -91,7 +91,7 @@ console.log(factorial(5));;
 ```
 Expected output: ***120***
 
-### [JSCQ-20](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-20)
+### [JSCQ-E11](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E11)
 **Generate fibonacci series of the provided length.**
 
 ```javascript
@@ -99,7 +99,7 @@ console.log(generateFibonacciSeries(15));;
 ```
 Expected output: ***[ 0,   1,   1,  2,  3,  5, 8,  13,  21, 34, 55, 89, 144, 233, 377 ]***
 
-### [JSCQ-16](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-16)
+### [JSCQ-E12](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E12)
 **Create an array from 1 to limit where elements divisible by num1 are replaced with 'Fizz', elements divisible by num2 are replaced with 'Buzz', and elements divisible by both are replaced with 'FizzBuzz'.**
 
 ```javascript
