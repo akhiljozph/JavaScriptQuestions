@@ -1,17 +1,14 @@
-function flattenObject(obj) {
-
+function flattenObject(obj, keyString = '') {
     const result = {};
-    const parent = '';
 
-    Object.values(obj).entries(([key, value]) => {
+    Object.entries(obj).forEach(([key, value]) => {
+        const newKey = keyString ? `${keyString}.${key}` : key;
 
         if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
-            parent = obj[index]
-            flattenObject(value);
+            Object.assign(result, flattenObject(value, newKey));
+        } else {
+            result[newKey] = value;
         }
-
-        result[`${}`];
-        parent = '';
     });
 
     return result;
@@ -26,4 +23,4 @@ const obj = {
     },
     e: 3
 };
-console.log(flattenObject(obj));
+console.log(flattenObject(obj, ''));

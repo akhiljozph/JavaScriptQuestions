@@ -429,12 +429,21 @@ Expected output: ***{ '4': [ 4.2 ], '6': [ 6.1, 6.3 ] }***
 
 ## [JSCQ-31](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-31)
 
-### **Implement a function that groups array elements based on a callback.**
+### **Implement a function that flattens a nested object.**
 
 ### Use Case - 1
 
 ```javascript
-console.log(groupBy([6.1, 4.2, 6.3], Math.floor));
+const obj = {
+    a: {
+        b: {
+            c: 1
+        },
+        d: 2
+    },
+    e: 3
+};
+console.log(flattenObject(obj, ''));
 ```
 
-Expected output: ***{ '4': [ 4.2 ], '6': [ 6.1, 6.3 ] }***
+Expected output: ***{ 'a.b.c': 1, 'a.d': 2, e: 3 }***
