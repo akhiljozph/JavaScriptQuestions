@@ -260,7 +260,7 @@ Expected output: ***{ 'a.b.c': 1, 'a.d': 2, e: 3 }***
 
 ## 🔴 Hard
 
-### [JSCQ-29](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-29)
+### [JSCQ-H01](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-H01)
 **Function that repeatedly reduces an array by taking absolute differences of adjacent elements until one number remains.**
 
 ```javascript
@@ -269,7 +269,7 @@ console.log(reduceByAdjacentDifferences(numbers));
 ```
 Expected output: ***4***
 
-### [JSCQ-15](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-15)
+### [JSCQ-H02](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-H02)
 **Given an array of strings. Return an array with the angrams as sub arrays.**
 
 ```javascript
@@ -278,7 +278,7 @@ console.log(groupAnagrams(words));
 ```
 Expected output: ***[['Ate', 'Eat', 'Tea'],['Integral','Triangle'],['Listen', 'Silent'],['Hello'],['World']]***
 
-### [JSCQ-03](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-03)
+### [JSCQ-H03](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-H03)
 **Given an array with integers. Find the length of the longest consecutive sequence from the array.**
 
 ```javascript
@@ -287,7 +287,7 @@ console.log(findLengthOfLongestConsecutiveSequence(sequence));
 ```
 Expected output: ***7***
 
-### [JSCQ-25](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-25)
+### [JSCQ-H04](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-H04)
 **Function that performs a diagonal zigzag traversal of a matrix in JavaScript.**
 
 ```javascript
@@ -300,7 +300,7 @@ console.log(traverseMatrix(matrix));
 ```
 Expected output: ***[1, 2, 3, 4, 5, 6, 7, 8, 9]***
 
-### [JSCQ-17](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-17)
+### [JSCQ-H05](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-H05)
 **Given an array of sentences, sort it by word and return the sorted sentences.**
 
 ```javascript
@@ -309,7 +309,7 @@ console.log(sortSentences(sentences));
 ```
 Expected output: ***['Learning angular12', 'Learning Angular15', 'Learning React', 'React In Action', 'The road to learn angular', 'The Road To Learn React']***
 
-### [JSCQ-23](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-23)
+### [JSCQ-H06](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-H06)
 **Find and alphabetically sort all non-empty combinations of characters from a given string, preserving their relative order.**
 
 ```javascript
@@ -318,7 +318,7 @@ console.log(generateUniqueSubStrings(str))
 ```
 Expected output: ***[ 'a', 'ab', 'abc', 'ac', 'b', 'bc', 'c' ]***
 
-### [JSCQ-27](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-27)
+### [JSCQ-H07](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-H07)
 **Function to find the maximum sum of a subsequence such that no two elements are adjacent in the array.**
 
 ```javascript
