@@ -1,10 +1,9 @@
-### **Find the missing numbers from the provided array. Array range will be provided.**
+### **Implement a function that groups array elements based on a callback.**
 
 ### Use Case - 1
 
 ```javascript
-const numbers = [0, 1, 3, 6, 5];
-console.log(findMissingNumbers(numbers, 0, 7));
+console.log(groupBy([6.1, 4.2, 6.3], Math.floor));
 ```
 
-Expected output: ***[2, 4, 7]***
+Expected output: ***{ '4': [ 4.2 ], '6': [ 6.1, 6.3 ] }***

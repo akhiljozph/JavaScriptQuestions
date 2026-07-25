@@ -1,10 +1,18 @@
-### **Given a string s, replace every numeric digit with a sequence of '|' characters equal to the value of that digit. Non-digit characters should remain unchanged. Return the resulting string.**
+### **Implement a function that flattens a nested object.**
 
 ### Use Case - 1
 
 ```javascript
-const str = 'a1bc23d0';
-console.log(replaceNumbersWithChar(str));
+const obj = {
+    a: {
+        b: {
+            c: 1
+        },
+        d: 2
+    },
+    e: 3
+};
+console.log(flattenObject(obj, ''));
 ```
 
-Expected output: ***a|bc||d|***
+Expected output: ***{ 'a.b.c': 1, 'a.d': 2, e: 3 }***

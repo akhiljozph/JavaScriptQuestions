@@ -1,10 +1,10 @@
-### **Function to seperate the odd number pairs with a hyphen.**
+### **Given an array with subarrays, return an array by flattening the original one.**
 
 ### Use Case - 1
 
 ```javascript
-const number = 354791;
-console.log(seperateOddPairsWithHyphens(number));
+const subArray = [0,1,[3,5,[2],6],4,8];
+console.log(flattenArray(subArray));
 ```
 
-Expected output: ***3-547-9-1***
+Expected output: ***[0, 1, 3, 5, 2, 6, 4, 8]***

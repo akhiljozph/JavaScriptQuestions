@@ -1,10 +1,10 @@
-### **Given an array of numbers and find the maximum difference between the elements of the array.**
+### **Function to seperate the odd number pairs with a hyphen.**
 
 ### Use Case - 1
 
 ```javascript
-const numbers = [1, 2, 6];
-console.log(findMaxDifference(numbers));
+const number = 354791;
+console.log(seperateOddPairsWithHyphens(number));
 ```
 
-Expected output: ***5***
+Expected output: ***3-547-9-1***

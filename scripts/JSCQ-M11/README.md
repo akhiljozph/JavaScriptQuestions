@@ -1,9 +1,42 @@
-### **Implement a function that groups array elements based on a callback.**
+### **Given two arrays. Merge the arrays and return an with only unique elements.**
 
 ### Use Case - 1
 
 ```javascript
-console.log(groupBy([6.1, 4.2, 6.3], Math.floor));
+const empOne = [
+    {
+        id: 1,
+        name: "Akhil Joseph",
+        department: "Delivery"
+    }, {
+        id: 2,
+        name: "Abraham Joseph",
+        department: "Delivery"
+    }
+];
+
+const empTwo = [
+    {
+        id: 1,
+        name: "Akhil Joseph",
+        department: "Delivery"
+    }, {
+        id: 2,
+        name: "Abraham Joseph",
+        department: "Delivery"
+    }, {
+        id: 3,
+        name: "Mariya James",
+        department: "Delivery"
+    }
+];
 ```
 
-Expected output: ***{ '4': [ 4.2 ], '6': [ 6.1, 6.3 ] }***
+Expected Output:
+```
+[
+  { id: 1, name: 'Akhil Joseph', department: 'Delivery' },
+  { id: 2, name: 'Abraham Joseph', department: 'Delivery' },
+  { id: 3, name: 'Mariya James', department: 'Delivery' }
+]
+```

@@ -1,10 +1,10 @@
-### **Given an array with subarrays, return an array by flattening the original one.**
+### **Given an array of numbers and find the maximum difference between the elements of the array.**
 
 ### Use Case - 1
 
 ```javascript
-const subArray = [0,1,[3,5,[2],6],4,8];
-console.log(flattenArray(subArray));
+const numbers = [1, 2, 6];
+console.log(findMaxDifference(numbers));
 ```
 
-Expected output: ***[0, 1, 3, 5, 2, 6, 4, 8]***
+Expected output: ***5***

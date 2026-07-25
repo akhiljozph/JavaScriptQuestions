@@ -1,32 +1,8 @@
-const empOne = [
-    {
-        id: 1,
-        name: "Akhil Joseph",
-        department: "Delivery"
-    }, {
-        id: 2,
-        name: "Abraham Joseph",
-        department: "Delivery"
-    }
-];
+function findLargest(stringsNNumbers) {
+    const numbers = stringsNNumbers.map((el) => Number(el)).filter((el) => !isNaN(el));
 
-const empTwo = [
-    {
-        id: 1,
-        name: "Akhil Joseph",
-        department: "Delivery"
-    }, {
-        id: 2,
-        name: "Abraham Joseph",
-        department: "Delivery"
-    }, {
-        id: 3,
-        name: "Mariya James",
-        department: "Delivery"
-    }
-];
-
-function mergeArraysAndReturnUnique(empOne, empTwo) {
-    return [...new Map([...empOne, ...empTwo].map(obj => [obj.id, obj])).values()];
+    return numbers.length > 0 ? Math.max(...numbers) : undefined;
 }
-console.log(mergeArraysAndReturnUnique(empOne, empTwo));
+
+const stringsNNumbers = [1, 'a', 10, 'r', '11'];
+console.log(findLargest(stringsNNumbers));

@@ -1,10 +1,10 @@
-### **Find the largest number from the given array which contains mixed inputs.**
+### **Given a string s, replace every numeric digit with a sequence of '|' characters equal to the value of that digit. Non-digit characters should remain unchanged. Return the resulting string.**
 
 ### Use Case - 1
 
 ```javascript
-const stringsNNumbers = [1, 'a', 10, 'r', '11'];
-console.log(findLargest(stringsNNumbers));
+const str = 'a1bc23d0';
+console.log(replaceNumbersWithChar(str));
 ```
 
-Expected output: ***11***
+Expected output: ***a|bc||d|***

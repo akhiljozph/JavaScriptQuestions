@@ -119,15 +119,6 @@ console.log(findLargestWords(sentence));
 Expected output: ***sentence***
 
 ### [JSCQ-M02](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M02)
-**Find and return the second largest number from the provided list.**
-
-```javascript
-const numbers = [2, 6, 4, 5, 7, 8, 9, 1, 10, 11];
-console.log(findSecondLargest(numbers));
-```
-Expected output: ***10***
-
-### [JSCQ-M03](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M03)
 **Function to find the common elements between two given arrays.**
 
 ```javascript
@@ -137,7 +128,86 @@ console.log(findCommon(firstArray, secondArray));
 ```
 Expected output: ***[1, 6]***
 
+### [JSCQ-M03](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M03)
+**Find and return the second largest number from the provided list.**
+
+```javascript
+const numbers = [2, 6, 4, 5, 7, 8, 9, 1, 10, 11];
+console.log(findSecondLargest(numbers));
+```
+Expected output: ***10***
+
 ### [JSCQ-M04](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M04)
+**Find the largest number from the given array which contains mixed inputs.**
+
+```javascript
+const stringsNNumbers = [1, 'a', 10, 'r', '11'];
+console.log(findLargest(stringsNNumbers));
+```
+Expected output: ***10***
+
+### [JSCQ-M05](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M05)
+**Given an array of numbers and find the maximum difference between the elements of the array.**
+
+```javascript
+const numbers = [1, 2, 6];
+console.log(findMaxDifference(numbers));
+```
+Expected output: ***5***
+
+### [JSCQ-M06](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M06)
+**Given a string s, replace every numeric digit with a sequence of '|' characters equal to the value of that digit. Non-digit characters should remain unchanged. Return the resulting string.**
+
+```javascript
+const str = 'a1bc23d0';
+console.log(replaceNumbersWithChar(str));
+```
+Expected output: ***a|bc||d|***
+
+### [JSCQ-M07](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M07)
+**Function to seperate the odd number pairs with a hyphen.**
+
+```javascript
+const number = 354791;
+console.log(seperateOddPairsWithHyphens(number));
+```
+Expected output: ***3-547-9-1***
+
+### [JSCQ-M08](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M08)
+**Implement a function that groups array elements based on a callback.**
+
+```javascript
+console.log(groupBy([6.1, 4.2, 6.3], Math.floor));
+```
+Expected output: ***{ '4': [ 4.2 ], '6': [ 6.1, 6.3 ] }***
+
+### [JSCQ-M09](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M09)
+**Implement a function that flattens a nested object.**
+
+```javascript
+const obj = {
+    a: {
+        b: {
+            c: 1
+        },
+        d: 2
+    },
+    e: 3
+};
+console.log(flattenObject(obj, ''));
+```
+Expected output: ***{ 'a.b.c': 1, 'a.d': 2, e: 3 }***
+
+### [JSCQ-M10](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M10)
+**Given an array with subarrays, return an array by flattening the original one.**
+
+```javascript
+const subArray = [0,1,[3,5,[2],6],4,8];
+console.log(flattenArray(subArray));
+```
+Expected output: ***[0, 1, 3, 5, 2, 6, 4, 8]***
+
+### [JSCQ-M11](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M11)
 **Given two arrays. Merge the arrays and return an with only unique elements.**
 
 ```javascript
@@ -179,34 +249,9 @@ Expected Output:
 ]
 ```
 
-### [JSCQ-M05](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M05)
-**Given an array with subarrays, return an array by flattening the original one.**
 
-```javascript
-const subArray = [0,1,[3,5,[2],6],4,8];
-console.log(flattenArray(subArray));
-```
-Expected output: ***[0, 1, 3, 5, 2, 6, 4, 8]***
 
-### [JSCQ-M06](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M06)
-**Find the largest number from the given array which contains mixed inputs.**
-
-```javascript
-const stringsNNumbers = [1, 'a', 10, 'r', '11'];
-console.log(findLargest(stringsNNumbers));
-```
-Expected output: ***10***
-
-### [JSCQ-M07](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M07)
-**Given an array of numbers and find the maximum difference between the elements of the array.**
-
-```javascript
-const numbers = [1, 2, 6];
-console.log(findMaxDifference(numbers));
-```
-Expected output: ***5***
-
-### [JSCQ-M08](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M08)
+### [JSCQ-M12](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M12)
 **Find the missing numbers from the provided array. Array range will be provided.**
 
 ```javascript
@@ -215,50 +260,14 @@ console.log(findMissingNumbers(numbers, 0, 7));
 ```
 Expected output: ***[2, 4, 7]***
 
-### [JSCQ-M09](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M09)
-**Given a string s, replace every numeric digit with a sequence of '|' characters equal to the value of that digit. Non-digit characters should remain unchanged. Return the resulting string.**
 
-```javascript
-const str = 'a1bc23d0';
-console.log(replaceNumbersWithChar(str));
-```
-Expected output: ***a|bc||d|***
 
-### [JSCQ-M10](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M10)
-**Function to seperate the odd number pairs with a hyphen.**
 
-```javascript
-const number = 354791;
-console.log(seperateOddPairsWithHyphens(number));
-```
-Expected output: ***3-547-9-1***
 
-### [JSCQ-M11](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M11)
-**Implement a function that groups array elements based on a callback.**
 
-```javascript
-console.log(groupBy([6.1, 4.2, 6.3], Math.floor));
-```
-Expected output: ***{ '4': [ 4.2 ], '6': [ 6.1, 6.3 ] }***
 
-### [JSCQ-M12](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M12)
-**Implement a function that flattens a nested object.**
 
-```javascript
-const obj = {
-    a: {
-        b: {
-            c: 1
-        },
-        d: 2
-    },
-    e: 3
-};
-console.log(flattenObject(obj, ''));
-```
-Expected output: ***{ 'a.b.c': 1, 'a.d': 2, e: 3 }***
-
-### [JSCQ-M12](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M12)
+### [JSCQ-M13](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M13)
 **Given a string, find the length of the longest substring without repeating characters.**
 
 ```javascript

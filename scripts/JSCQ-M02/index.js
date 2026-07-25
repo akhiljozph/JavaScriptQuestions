@@ -1,18 +1,18 @@
-function findSecondLargest(numbers) {
-    let uniqueNumbers = new Set(numbers);
-    let largest = -Infinity, secondLargest = -Infinity;
+function findCommon(firstArray, secondArray) {
+    const iterableArray = (firstArray.length > secondArray.length) ? firstArray : secondArray;
+    const nonIterableArray = (firstArray.length > secondArray.length) ? secondArray : firstArray;
+    const result = [];
 
-    for (let uniqueNumber of uniqueNumbers) {
-        if (uniqueNumber > largest) {
-            secondLargest = largest;
-            largest = uniqueNumber;
-        } else if (uniqueNumber > secondLargest) {
-            secondLargest = uniqueNumber;
+    for (let item of iterableArray) {
+        const response = nonIterableArray.find((elem) => elem === item);
+        if (response !== undefined && !result.includes(item)) {
+            result.push(item);
         }
     }
 
-    return secondLargest === -Infinity ? null : secondLargest;
+    return result;
 }
 
-const numbers = [2, 6, 4, 5, 7, 8, 9, 1, 10, 11];
-console.log(findSecondLargest(numbers));
+const firstArray = [1, 0, 2, 1, 5, 6];
+const secondArray = [1, 4, 0, 8, 7, 6];
+console.log(findCommon(firstArray, secondArray));

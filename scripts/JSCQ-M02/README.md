@@ -1,10 +1,11 @@
-### **Find and return the second largest number from the provided list.**
+### **Function to find the common elements between two given arrays.**
 
 ### Use Case - 1
 
 ```javascript
-const numbers = [2, 6, 4, 5, 7, 8, 9, 1, 10, 11];
-console.log(findSecondLargest(numbers));
+const firstArray = [1, 2, 1, 5, 6];
+const secondArray = [1, 4, 8, 7, 6];
+console.log(findCommon(firstArray, secondArray));
 ```
 
-Expected output: ***10***
+Expected output: ***[1, 6]***

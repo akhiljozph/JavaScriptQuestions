@@ -1,16 +1,17 @@
-function findMissingNumbers(numbers, start, end) {
+function groupBy(arr, fn) {
+    let groupObj = {};
 
-    const numSet = new Set(numbers);
-    const result = [];
-
-    for (let i = start; i <= end; i++) {
-        if (!numSet.has(i)) {
-            result.push(i);
+    for (let item of arr) {
+        if (groupObj[fn(item)]) {
+            groupObj[fn(item)].push(item);
+        } else {
+            groupObj[fn(item)] = [item]
         }
     }
 
-    return result;
+    return groupObj;
 }
 
-const numbers = [0, 1, 3, 6, 5];
-console.log(findMissingNumbers(numbers, 0, 7));
+console.log(
+    groupBy([6.1, 4.2, 6.3], Math.floor)
+);

@@ -1,21 +1,18 @@
-function seperateOddPairsWithHyphens(number) {
-    let returnString = '';
-    const numbers = number.toString().split('');
+const subArray = [0, 1, [3, 5, [2], 6], 4, 8];
 
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 !== 0) {
-            if (i > 0 && numbers[i - 1] % 2 !== 0) {
-                returnString += `-${numbers[i]}`;
-            } else {
-                returnString += numbers[i];
-            }
+function flattenArray(subArray) {
+    let result = [];
+
+    for (let element of subArray) {
+        if (Array.isArray(element)) {
+            // result.push(...flattenArray(element));
+            result = result.concat(flattenArray(element));
         } else {
-            returnString += numbers[i];
+            result.push(element);
         }
     }
 
-    return returnString;
+    return result;
 }
 
-const number = 354791;
-console.log(seperateOddPairsWithHyphens(number));
+console.log(flattenArray(subArray));

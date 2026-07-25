@@ -1,18 +1,10 @@
-### **Implement a function that flattens a nested object.**
+### **Find the missing numbers from the provided array. Array range will be provided.**
 
 ### Use Case - 1
 
 ```javascript
-const obj = {
-    a: {
-        b: {
-            c: 1
-        },
-        d: 2
-    },
-    e: 3
-};
-console.log(flattenObject(obj, ''));
+const numbers = [0, 1, 3, 6, 5];
+console.log(findMissingNumbers(numbers, 0, 7));
 ```
 
-Expected output: ***{ 'a.b.c': 1, 'a.d': 2, e: 3 }***
+Expected output: ***[2, 4, 7]***

@@ -1,26 +1,16 @@
-function flattenObject(obj, keyString = '') {
-    const result = {};
+function findMissingNumbers(numbers, start, end) {
 
-    Object.entries(obj).forEach(([key, value]) => {
-        const newKey = keyString ? `${keyString}.${key}` : key;
+    const numSet = new Set(numbers);
+    const result = [];
 
-        if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
-            Object.assign(result, flattenObject(value, newKey));
-        } else {
-            result[newKey] = value;
+    for (let i = start; i <= end; i++) {
+        if (!numSet.has(i)) {
+            result.push(i);
         }
-    });
+    }
 
     return result;
 }
 
-const obj = {
-    a: {
-        b: {
-            c: 1
-        },
-        d: 2
-    },
-    e: 3
-};
-console.log(flattenObject(obj, ''));
+const numbers = [0, 1, 3, 6, 5];
+console.log(findMissingNumbers(numbers, 0, 7));

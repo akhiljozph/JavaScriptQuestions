@@ -3,9 +3,15 @@ function findMaxDifference(numbers) {
         return "Array doesn't have enough elements";
     }
 
-    const min = Math.min(...numbers);
-    const max = Math.max(...numbers);
+    let min = numbers[0], max = numbers[0];
 
+    numbers.forEach((num) => {
+        if (num < min) {
+            min = num;
+        } else if (num > max) {
+            max = num;
+        }
+    });
     return max - min;
 }
 

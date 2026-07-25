@@ -1,19 +1,24 @@
-function findMaxDifference(numbers) {
-    if (numbers.length < 2) {
-        return "Array doesn't have enough elements";
-    }
+function seperateOddPairsWithHyphens(number) {
 
-    let min = numbers[0], max = numbers[0];
+    const numStr = number.toString();
 
-    numbers.forEach((num) => {
-        if (num < min) {
-            min = num;
-        } else if (num > max) {
-            max = num;
+    if (!numStr) return '';
+
+    return numStr.split('').reduce((result, currentDigit, index) => {
+        if (index === 0) return currentDigit;
+
+        const previousDigit = numStr[index - 1];
+
+        const isPrevOdd = Number(previousDigit) % 2 !== 0;
+        const isCurrentOdd = Number(currentDigit) % 2 !== 0;
+
+        if (isPrevOdd && isCurrentOdd) {
+            return result + '-' + currentDigit;
         }
-    });
-    return max - min;
+
+        return result + currentDigit;
+    }, '');
 }
 
-const numbers = [1, 2, 6];
-console.log(findMaxDifference(numbers));
+const number = 354791;
+console.log(seperateOddPairsWithHyphens(number));

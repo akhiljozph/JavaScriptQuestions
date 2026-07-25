@@ -1,19 +1,32 @@
-function groupBy(arr, fn) {
-    const grouped = {};
-
-    for (const item of arr) {
-        const key = fn(item);
-
-        if (!grouped[key]) {
-            grouped[key] = [];
-        }
-
-        grouped[key].push(item);
+const empOne = [
+    {
+        id: 1,
+        name: "Akhil Joseph",
+        department: "Delivery"
+    }, {
+        id: 2,
+        name: "Abraham Joseph",
+        department: "Delivery"
     }
+];
 
-    return grouped;
+const empTwo = [
+    {
+        id: 1,
+        name: "Akhil Joseph",
+        department: "Delivery"
+    }, {
+        id: 2,
+        name: "Abraham Joseph",
+        department: "Delivery"
+    }, {
+        id: 3,
+        name: "Mariya James",
+        department: "Delivery"
+    }
+];
+
+function mergeArraysAndReturnUnique(empOne, empTwo) {
+    return [...new Map([...empOne, ...empTwo].map(obj => [obj.id, obj])).values()];
 }
-
-console.log(
-    groupBy([6.1, 4.2, 6.3], Math.floor)
-);
+console.log(mergeArraysAndReturnUnique(empOne, empTwo));

@@ -1,42 +1,10 @@
-### **Given two arrays. Merge the arrays and return an with only unique elements.**
+### **Find the largest number from the given array which contains mixed inputs.**
 
 ### Use Case - 1
 
 ```javascript
-const empOne = [
-    {
-        id: 1,
-        name: "Akhil Joseph",
-        department: "Delivery"
-    }, {
-        id: 2,
-        name: "Abraham Joseph",
-        department: "Delivery"
-    }
-];
-
-const empTwo = [
-    {
-        id: 1,
-        name: "Akhil Joseph",
-        department: "Delivery"
-    }, {
-        id: 2,
-        name: "Abraham Joseph",
-        department: "Delivery"
-    }, {
-        id: 3,
-        name: "Mariya James",
-        department: "Delivery"
-    }
-];
+const stringsNNumbers = [1, 'a', 10, 'r', '11'];
+console.log(findLargest(stringsNNumbers));
 ```
 
-Expected Output:
-```
-[
-  { id: 1, name: 'Akhil Joseph', department: 'Delivery' },
-  { id: 2, name: 'Abraham Joseph', department: 'Delivery' },
-  { id: 3, name: 'Mariya James', department: 'Delivery' }
-]
-```
+Expected output: ***11***

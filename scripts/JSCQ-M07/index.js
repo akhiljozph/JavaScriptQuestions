@@ -1,13 +1,21 @@
-function findMaxDifference(numbers) {
-    if (numbers.length < 2) {
-        return "Array doesn't have enough elements";
+function seperateOddPairsWithHyphens(number) {
+    let returnString = '';
+    const numbers = number.toString().split('');
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 !== 0) {
+            if (i > 0 && numbers[i - 1] % 2 !== 0) {
+                returnString += `-${numbers[i]}`;
+            } else {
+                returnString += numbers[i];
+            }
+        } else {
+            returnString += numbers[i];
+        }
     }
 
-    const min = Math.min(...numbers);
-    const max = Math.max(...numbers);
-
-    return max - min;
+    return returnString;
 }
 
-const numbers = [1, 2, 6];
-console.log(findMaxDifference(numbers));
+const number = 354791;
+console.log(seperateOddPairsWithHyphens(number));
