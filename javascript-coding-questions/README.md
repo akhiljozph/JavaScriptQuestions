@@ -258,6 +258,15 @@ console.log(flattenObject(obj, ''));
 ```
 Expected output: ***{ 'a.b.c': 1, 'a.d': 2, e: 3 }***
 
+### [JSCQ-M12](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M12)
+**Given a string, find the length of the longest substring without repeating characters.**
+
+```javascript
+console.log(longestUniqueSubstring('abcabcbb'));
+```
+
+Expected output: ***abc***
+
 ## 🔴 Hard
 
 ### [JSCQ-H01](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-H01)
