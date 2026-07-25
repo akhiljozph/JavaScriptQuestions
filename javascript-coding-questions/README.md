@@ -107,6 +107,16 @@ console.log(fizzBuzzVariations(10, 2, 3))
 ```
 Expected output: ***[1, 'Fizz', 'Buzz', 'Fizz', 5, 'FizzBuzz', 7, 'Fizz', 'Buzz', 'Fizz']***
 
+### [JSCQ-E13](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-E13)
+**Implement binary search on a sorted array and return the index of the target, or -1 if not found.**
+
+```javascript
+    const numbers = [1, 3, 5, 7, 9, 11, 13];
+    console.log(binarySearch(numbers, 9));
+```
+
+Expected output: ***4***
+
 ## 🟡 Medium
 
 ### [JSCQ-M01](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M01)
