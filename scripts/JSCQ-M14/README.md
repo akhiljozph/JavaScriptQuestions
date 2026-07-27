@@ -1,10 +1,24 @@
 ## Implement a deep clone function that works on nested objects and arrays (no structuredClone, no JSON.parse/stringify).
 
 ```javascript
-    const original = { a: 1, b: { c: [1, 2, { d: 3 }] } };
-    const clone = deepClone(original);
-    clone.b.c[2].d = 99;
-    console.log(original.b.c[2].d, clone.b.c[2].d);
+const originalObject = {
+    a: 1,
+    b: {
+        c: [1, 2, {
+            d: 3
+        }]
+    }
+};
+const copiedObject = deepClone(originalObject);
+
+copiedObject.b.c[1] = 7;
+
+console.log("originalObject", originalObject);
+console.log("copiedObject", copiedObject);
 ```
 
-Expected output: ***3 99***
+Expected output:
+```javascript
+    originalObject { a: 1, b: { c: [ 1, 2, { d: 3} ] } }
+    copiedObject { a: 1, b: { c: [ 1, 7, { d: 3 } ] } }
+```
