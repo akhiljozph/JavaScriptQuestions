@@ -397,9 +397,10 @@ console.log("G");
   ```javascript
     A
     G
+    E
     C
     F
-    E
+    D
     B
   ```
 </details>
