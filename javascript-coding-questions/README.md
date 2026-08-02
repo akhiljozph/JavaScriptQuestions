@@ -270,13 +270,6 @@ console.log(findMissingNumbers(numbers, 0, 7));
 ```
 Expected output: ***[2, 4, 7]***
 
-
-
-
-
-
-
-
 ### [JSCQ-M13](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M13)
 **Given a string, find the length of the longest substring without repeating characters.**
 
@@ -285,6 +278,32 @@ console.log(longestUniqueSubstring('abcabcbb'));
 ```
 
 Expected output: ***abc***
+
+### [JSCQ-M14](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M14)
+**Implement a deep clone function that works on nested objects and arrays (no structuredClone, no JSON.parse/stringify).**
+
+```javascript
+const originalObject = {
+    a: 1,
+    b: {
+        c: [1, 2, {
+            d: 3
+        }]
+    }
+};
+const copiedObject = deepClone(originalObject);
+
+copiedObject.b.c[1] = 7;
+
+console.log("originalObject", originalObject);
+console.log("copiedObject", copiedObject);
+```
+
+Expected output:
+```javascript
+    originalObject { a: 1, b: { c: [ 1, 2, { d: 3} ] } }
+    copiedObject { a: 1, b: { c: [ 1, 7, { d: 3 } ] } }
+```
 
 ## 🔴 Hard
 
