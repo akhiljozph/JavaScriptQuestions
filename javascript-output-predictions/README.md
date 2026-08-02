@@ -378,7 +378,11 @@ setTimeout(() => {
 Promise.resolve().then(() => {
   console.log("C");
 }).then(() => {
-    console.log("E");
+    console.log("D");
+});
+
+process.nextTick(() => {
+    console.log("E")
 });
 
 queueMicrotask(() => {
