@@ -175,11 +175,11 @@ console.log(replaceNumbersWithChar(str));
 Expected output: ***a|bc||d|***
 
 ### [JSCQ-M07](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M07)
-**Function to seperate the odd number pairs with a hyphen.**
+**Function to separate the odd number pairs with a hyphen.**
 
 ```javascript
 const number = 354791;
-console.log(seperateOddPairsWithHyphens(number));
+console.log(separateOddPairsWithHyphens(number));
 ```
 Expected output: ***3-547-9-1***
 

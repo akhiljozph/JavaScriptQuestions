@@ -1,4 +1,4 @@
-function seperateOddPairsWithHyphens(number) {
+function separateOddPairsWithHyphens(number) {
     let returnString = '';
     const numbers = number.toString().split('');
 
@@ -18,4 +18,4 @@ function seperateOddPairsWithHyphens(number) {
 }
 
 const number = 354791;
-console.log(seperateOddPairsWithHyphens(number));
+console.log(separateOddPairsWithHyphens(number));
