@@ -209,7 +209,7 @@ console.log(flattenObject(obj, ''));
 Expected output: ***{ 'a.b.c': 1, 'a.d': 2, e: 3 }***
 
 ### [JSCQ-M10](https://github.com/akhiljozph/JavaScriptCodingQuestions/tree/master/scripts/JSCQ-M10)
-**Given an array with subarrays, return an array by flattening the original one.**
+**Given an array with sub arrays, return an array by flattening the original one.**
 
 ```javascript
 const subArray = [0,1,[3,5,[2],6],4,8];

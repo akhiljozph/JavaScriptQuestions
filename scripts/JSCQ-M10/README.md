@@ -1,4 +1,4 @@
-### **Given an array with subarrays, return an array by flattening the original one.**
+### **Given an array with sub arrays, return an array by flattening the original one.**
 
 ### Use Case - 1
 
