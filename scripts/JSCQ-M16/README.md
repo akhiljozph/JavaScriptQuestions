@@ -9,4 +9,4 @@
     emitter.emit('greet', 'Akhil');
 ```
 
-Expected output: ***Hello, Akhil (printed once only)***
+Expected output: ***Hello, Akhil***
